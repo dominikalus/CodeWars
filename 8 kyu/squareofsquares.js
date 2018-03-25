@@ -13,5 +13,8 @@ isSquare(26) // => false */
 
 
 var isSquare = function(n){
-    return Math.sqrt(n) % 1 === 0 ? true : false;
-};
+    if(Math.sqrt(n) % 1 === 0){
+        return true;
+    }
+    return false;
+}
